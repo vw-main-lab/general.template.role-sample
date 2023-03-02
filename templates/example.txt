@@ -1,5 +1,7 @@
 {% if ansible_facts['os_family'] == 'Debian' %}
 Debian
+{% elif ansible_facts['os_family'] == 'RedHat' %}
+Redhat
 {% else %}
 Not Debian
 {% endif %}
